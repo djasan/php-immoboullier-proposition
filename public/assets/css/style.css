@@ -1,0 +1,156 @@
+body {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 1rem;
+  }
+  
+  ul  {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  img {
+    max-width: 200px;
+    display: block;
+  }
+
+  header  {
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  header ul {
+    display:flex;
+    gap: 2rem;
+  }
+
+  footer {
+    margin-top: 1rem;
+    border-top: 2px solid grey;
+  }
+
+  label,input,textarea {
+    display: block;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  label , form > div {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  form > div {
+    border-bottom: solid grey 1px;
+  }
+
+  input, textarea {
+    color: #fff;
+    background-color: #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+  }
+
+input[type="submit"] , .btn {
+  cursor: pointer;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="radio"] , input[type="checkbox"] {
+  display: inline;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+select {
+  display: block;
+  margin: 0 0 1rem;
+  border: solid 1px #ddd;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #ccc;
+}
+
+.btn-norm {
+  background-color: blue;
+}
+
+.btn-supp {
+background-color: red;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  padding: 0 0.8rem;
+  font-weight: bold;
+}
+
+.error:hover {
+  text-decoration: none;
+} 
+
+table {
+  width: 100%;
+  
+}
+
+table td {
+  padding: 1rem;
+}
+
+table th {
+  border-bottom: solid 1px grey;
+  padding-bottom: 1rem;
+}
+
+.dspflex {
+  display: flex;
+}
+
+.imgxs {
+  max-width: 50px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  border:solid 1px grey;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  max-width: 300px;
+}
