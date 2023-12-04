@@ -11,12 +11,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') :
     $piece = sanitizeData($_POST['piece'],'int');
     
     // Titre
-    if (!isStringValid($titre,10,100)) :
+    if (!isStringValid($titre,5,100)) :
         $errors[] = 'Titre vide ou trop long !!!';
     endif;
 
     // Description
-    if (!isStringValid($description,50,3000)) :
+    if (!isStringValid($description,10,3000)) :
         $errors[] = 'Description vide ou trop long !!!';
     endif;
 
@@ -31,13 +31,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') :
 
     // Type
     if(!isset($_POST['type'])) :
-        $errors[] = 'Veuillez renseigner le typ de location !!!';
+        $errors[] = 'Veuillez renseigner le type de location !!!';
     else:
         $type = $_POST['type'];
     endif;
 
     // Prix
-    if (!isStringValid($prix,4,10)) :
+    if (!isStringValid($prix,3,10)) :
         $errors[] = 'Prix vide ou trop long !!!';
     endif;
 

@@ -32,16 +32,17 @@
     <!------------>
     <div>
         <label for="type">Type de location :</label>
-
+<?php dbug($_POST)?>
         <input type="radio" name="type" id="type" value="location" 
         
-        <?= ($annonceUpdate['type'] == 'location' && $_POST['type'] == 'location' ) ? 'checked' : '' ?>  >Location
-
+        <?= ($annonceUpdate['type'] == 'location' ) ? 'checked' : '' ?>  >Location
+      
         <input type="radio" name="type" id="type" value="vente" 
         
-        <?= ($annonceUpdate['type'] == 'vente' && $_POST['type'] == 'vente' ) ? 'checked' : '' ?>
+        <?= ($annonceUpdate['type'] ==  'vente' ) ? 'checked' : '' ?>
 
         >Vente
+       
     </div>
 
     <!------------>
